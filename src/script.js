@@ -16,7 +16,7 @@ const months = [
 
 
 const formet = (n) => n < 10 ? `0${n}` : `${n}`;
-const d_n = (h) => h < 12 ? "AM" : "PM"
+// const d_n = (h) => h < 12 ? "AM" : "PM"
 
 
 function formet_12(realTime) {
@@ -51,7 +51,7 @@ setInterval(() => {
     hours.innerHTML = formet(formet_12(formet_12_H)); //for 12h formet
     menutes.innerHTML = minit;
     second.innerHTML = sekent;
-    ampm.innerHTML = d_n(hoursH) //for am and pm
+    // ampm.innerHTML = d_n(hoursH) //for am and pm
 
     day.innerHTML = din;
     monthName.innerHTML = ` ${date} ${mas}`
@@ -74,3 +74,7 @@ setInterval(() => {
 // const second = now.getSeconds(); // সেকেন্ড (0–59)
 // console.log(minute)
 // console.log(second)
+
+
+
+
